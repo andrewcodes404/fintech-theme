@@ -1,0 +1,185 @@
+/* Add more fonts on ./partials/_c_font_face.scss */
+body {
+  font-family: "GT Walsheim", sans-serif;
+  color: $darkblue;
+}
+
+// h1,
+// h2,
+// h3,
+// h4 {
+//   font-family: 'Roboto', sans-serif;
+//   font-weight: 400;
+// }
+
+.white {
+  color: white;
+}
+
+.skyblue {
+  color: $skyblue;
+}
+.turquoise {
+  color: $turquoise;
+}
+
+.darkblue {
+  color: $darkblue;
+}
+// $lightblue: #a4f2ff;
+// $skyblue: #4dd3ea;
+// $blue :  #00a1b8;
+// $darkblue : #293d48;
+
+.bold {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0 0 10px 0;
+  color: $darkblue;
+
+  @include media-sml {
+    font-size: 44px;
+  }
+
+  @include media-lrg {
+    font-size: 54px;
+    margin-bottom: 60px;
+  }
+}
+
+.h1-size {
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 1.4;
+  margin: 0 0 10px 0;
+  color: $darkblue;
+
+  @include media-sml {
+    font-size: 44px;
+  }
+
+  @include media-lrg {
+    font-size: 54px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 1.15;
+  letter-spacing: normal;
+  color: #293d48;
+  margin: 35px 0 35px 0;
+
+  @include media-sml {
+    font-size: 34px;
+  }
+
+  @include media-lrg {
+    font-size: 40px;
+  }
+}
+
+h3 {
+  
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.4;
+  margin: 30px 0 30px 0;
+  @include media-sml {
+    font-size: 23px;
+  }
+
+  @include media-lrg {
+    font-size: 25px;
+  }
+}
+
+.h3-thin {
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 19px;
+  letter-spacing: 0.16px;
+  line-height: 1.44;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+h5 {
+  font-size: 26px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  margin: 0 0 10px 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0 0 10px 0;
+}
+
+small {
+  font-size: 16px;
+  margin: 0 0 10px 0;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: $darkblue;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 20px 0;
+}
+
+li {
+  font-size: 17px;
+  line-height: 1.2;
+  // list-style: none;
+  list-style-type: disc;
+  list-style-position: inside;
+  margin: 0 0 15px 0;
+}
+
+// li::before {
+//   content: " - ";
+// }
+
+em {
+  font-style: italic;
+}
+
+em::before {
+  content: '"';
+}
+
+em::after {
+  content: '"';
+}
+
+blockquote {
+  margin: 1rem 1rem;
+  padding-left: 1rem;
+  font-style: italic;
+  color: darkslategray;
+  border-left: 1px solid;
+  line-height: 1.5;
+}

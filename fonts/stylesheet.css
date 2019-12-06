@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'GT Walsheim';
+    src: url('GTWalsheim-Bold.woff2') format('woff2'),
+        url('GTWalsheim-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT Walsheim';
+    src: url('GTWalsheim-Thin.woff2') format('woff2'),
+        url('GTWalsheim-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT Walsheim';
+    src: url('GTWalsheim-Regular.woff2') format('woff2'),
+        url('GTWalsheim-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT Walsheim';
+    src: url('GTWalsheim-RegularOblique.woff2') format('woff2'),
+        url('GTWalsheim-RegularOblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GT Walsheim';
+    src: url('GTWalsheim-ThinOblique.woff2') format('woff2'),
+        url('GTWalsheim-ThinOblique.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GT Walsheim';
+    src: url('GTWalsheim-BoldOblique.woff2') format('woff2'),
+        url('GTWalsheim-BoldOblique.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+

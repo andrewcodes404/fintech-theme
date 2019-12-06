@@ -1,0 +1,135 @@
+// case-studies --- case-studies --- case-studies --- case-studies ---
+// case-studies --- case-studies --- case-studies --- case-studies ---
+// case-studies --- case-studies --- case-studies --- case-studies ---
+
+// .case-studies {}
+
+.cs-hero {
+  height: 300px;
+  img {
+    object-fit: cover;
+    height: 100%;
+  }
+  margin-bottom: 50px;
+  @include media-lrg {
+    margin-bottom: 100px;
+  }
+}
+
+.cases {
+  h1 {
+    text-align: center;
+  }
+}
+
+.case {
+  display: flex;
+  margin: 40px 0;
+  justify-content: center;
+
+  @include media-sml{
+      margin: 0 0 80px 0;
+  }
+}
+
+.case-image-wrapper {
+  background: $darkblue;
+  border-top-right-radius: 120px;
+  border-bottom-right-radius: 120px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+
+  position: relative;
+
+  display: none;
+  @include media-sml {
+    display: flex;
+  }
+
+  @include media-lrg-xl {
+    width: 180px;
+    height: 180px;
+    border-top-left-radius: 120px;
+    border-bottom-left-radius: 120px;
+    justify-content: center;
+  }
+}
+
+.case-image-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -600px;
+  right: 150px;
+  background: $darkblue;
+  z-index: -1;
+
+  display: none;
+
+  @include media-sml{
+    display: block;
+  }
+
+  @include media-lrg-xl {
+    display: none;
+  }
+}
+
+.case-image {
+  display: none;
+
+  @include media-sml {
+    display: block;
+    width: 140px;
+    margin-right: 30px;
+  }
+  @include media-lrg-xl {
+    margin: unset;
+    width: 140px;
+  }
+}
+
+.case-text {
+  // width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  h3 {
+    margin: 0 0 20px 0;
+  }
+
+
+  @include media-sml {
+    width: 60%;
+      margin-left: 70px;
+  }
+}
+
+// .case-single --- .case-single --- .case-single ---
+// .case-single --- .case-single --- .case-single ---
+// .case-single --- .case-single --- .case-single ---
+
+.case-single-hero {
+  height: 300px;
+
+  img {
+    object-fit: cover;
+    height: 100%;
+  }
+  // margin-bottom: 50px;
+  @include media-lrg {
+    // margin-bottom: 100px;
+  }
+}
+
+.pagetitle {
+  margin-top: 50px;
+  h1 {
+    color: white;
+  }
+}

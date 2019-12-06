@@ -1,0 +1,75 @@
+// page-principles --- page-principles --- page-principles ---
+// page-principles --- page-principles --- page-principles ---
+// page-principles --- page-principles --- page-principles ---
+
+.principles-cards {
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+  margin: 30px auto;
+  max-width: 550px;
+  @include media-lrg {
+    margin: 10px auto;
+    max-width: unset;
+  }
+}
+
+.principles-card {
+  width: 100%;
+  margin: 0 auto 30px;
+
+  @include media-sml {
+    width: 50%;
+  }
+
+  @include media-lrg {
+    width: 25%;
+  }
+
+  display: flex;
+  flex-direction: column;
+}
+
+.principles-card--img {
+  max-width: 180px;
+  width: 70%;
+  margin: 0 auto 50px;
+}
+
+.principles-card--text {
+  max-width: 180px;
+  margin: 0 auto;
+  p {
+    font-size: 15px;
+  }
+  h4 {
+    color: $blue;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: oblique;
+  }
+}
+
+.principles-button-wrapper {
+  text-align: center;
+  margin: 40px 0 100px;
+}
+
+.principles-button {
+  padding: 10px 15px;
+  background: $skyblue;
+  display: inline;
+  border-radius: 20px;
+  span {
+    color: $darkblue;
+    font-weight: bold;
+  }
+  cursor: pointer;
+  transition: 0.4s;
+  &:hover {
+    span {
+      color: white;
+    }
+  }
+}

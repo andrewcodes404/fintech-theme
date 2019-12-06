@@ -1,0 +1,92 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// 🔥 HIDE THE SCROLLBAR? 🔥
+
+// body::-webkit-scrollbar {
+//   width: 0 !important;
+// }
+
+// body {
+//   overflow: -moz-scrollbars-none;
+//   -ms-overflow-style: none;
+// }
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.push-down {
+  flex: 1;
+}
+
+///images
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+// GLOBAL --- GLOBAL --- GLOBAL --- GLOBAL ---
+// GLOBAL --- GLOBAL --- GLOBAL --- GLOBAL ---
+// GLOBAL --- GLOBAL --- GLOBAL --- GLOBAL ---
+// GLOBAL --- GLOBAL --- GLOBAL --- GLOBAL ---
+// GLOBAL --- GLOBAL --- GLOBAL --- GLOBAL ---
+
+.global-content-width {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.global-content-width-sml {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+
+  .wp-block-image {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+
+.global-blog-width {
+  padding: 90px 0;
+  width: 90%;
+  max-width: 680px;
+  margin: 0 auto;
+
+  .wp-block-image {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+
+.global-tac {
+  text-align: center;
+}
+
+.global-section-padding {
+  padding: 50px 0;
+  @include media-lrg {
+    padding: 100px 0;
+  }
+}
+
+.global-padding-vertical {
+  padding: 50px 0;
+  @include media-med {
+    padding: 100px 0;
+  }
+}
+
+.wp-block-quote {
+  margin: 50px 0;
+}

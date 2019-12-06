@@ -1,0 +1,367 @@
+
+// Capability Banner --- Capability Banner --- Capability Banner --- 
+// Capability Banner --- Capability Banner --- Capability Banner --- 
+// Capability Banner --- Capability Banner --- Capability Banner --- 
+
+.capability {
+  background-image: linear-gradient(to bottom, #01a1b9, #007287);
+  position: relative;
+  padding: 50px 0
+}
+
+.capability-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+
+  @include media-sml {
+    flex-direction: row;
+  }
+
+  @include media-lrg {
+    justify-content: space-between;
+  }
+}
+
+.capability-content--icon {
+  margin-bottom: 30px;
+  width: 130px;
+  @include media-sml {
+    width: 185px;
+  }
+}
+
+.capability-content--text {
+  color: white;
+  @include media-sml {
+    width: 60%;
+    max-width: 380px;
+    margin-left: 60px;
+    font-size: 18px;
+  }
+  @include media-lrg {
+    font-size: 22px;
+  }
+}
+
+.capability-read-more {
+  a {
+    color: $lightblue;
+    &:hover {
+      color: $darkblue;
+    }
+  }
+
+  p {
+    font-weight: bold;
+  }
+}
+
+.capability-illus-wrapper {
+  height: 100%;
+  position: relative;
+  width: 200px;
+  display: none;
+  @include media-med {
+    display: block;
+  }
+}
+
+.capability-illus {
+  width: 130px;
+  position: absolute;
+  bottom: -50px;
+}
+
+// Case Studies Banner --- Case Studies Banner --- Case Studies Banner --- 
+// Case Studies Banner --- Case Studies Banner --- Case Studies Banner --- 
+// Case Studies Banner --- Case Studies Banner --- Case Studies Banner --- 
+
+.case-banner {
+  position: relative;
+}
+
+.case-banner--man {
+  width: 100px;
+  transition: 0.5s;
+  position: absolute;
+  bottom: -3px;
+  right: 30px;
+
+  display: none;
+  @include media-med {
+    display: block;
+  }
+
+  @include media-lrg {
+    right: 2%;
+  }
+  @include media-lrg-xl {
+    right: 10vw;
+  }
+}
+
+.case-banner--scales-wrapper {
+  position: relative;
+
+  display: none;
+  @include media-med {
+    display: block;
+    height: 250px;
+  }
+  @include media-lrg {
+    height: 350px;
+  }
+  @include media-lrg-xl {
+    height: 400px;
+  }
+}
+
+.case-banner--scales {
+  position: absolute;
+  width: 500px;
+  margin: 0 auto;
+  bottom: 0;
+  left: 50px;
+  right: 0;
+  display: none;
+  @include media-med {
+    display: block;
+  }
+
+  @include media-lrg {
+    width: 650px;
+  }
+
+  @include media-lrg-xl {
+    width: 800px;
+  }
+}
+
+.case-banner--content {
+  display: flex;
+  background: $darkblue;
+  position: relative;
+  width: 100%;
+  margin: 20px 5% 20px 0;
+  @include media-sml {
+    width: 97%;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+  }
+
+  @include media-med {
+    width: 75%;
+    max-width: 780px;
+    margin: 0px 5% 20px 0;
+  }
+
+  @include media-lrg {
+    margin: 0px auto 20px;
+  }
+
+  @include media-lrg-xl {
+    margin: 0px auto 20px;
+  }
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.case-banner--content-bkg {
+  position: absolute;
+  left: -6000px;
+  bottom: 0;
+  right: 300px;
+  top: 0;
+  background: $darkblue;
+  z-index: -1;
+}
+
+.case-banner--content-text {
+  color: white;
+
+  h3 {
+    color: white;
+    font-weight: 300;
+    font-size: 32px;
+    margin: 0 0 20px 0;
+  }
+
+  width: 85%;
+
+  margin: 0 auto;
+
+  @include media-sml {
+    width: 80%;
+    max-width: 360px;
+    margin-left: 7%;
+  }
+
+  @include media-med {
+    width: 80%;
+    max-width: 380px;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+.case-banner--content-img {
+  width: 230px;
+  margin: 0 30px;
+
+  display: none;
+  @include media-sml {
+    display: block;
+  }
+}
+
+.case-banner-read-more {
+  font-size: 20px;
+  a {
+    color: $turquoise;
+    &:hover {
+      color: $coral;
+    }
+  }
+}
+
+
+// Ready To Talk Banner --- Ready To Talk Banner --- Ready To Talk Banner --- 
+// Ready To Talk Banner --- Ready To Talk Banner --- Ready To Talk Banner --- 
+// Ready To Talk Banner --- Ready To Talk Banner --- Ready To Talk Banner --- 
+
+.ready-to-talk {
+  padding: 50px 0 100px;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  h3 {
+    @include media-med {
+      width: 70%;
+      margin: 0 auto 80px;
+    }
+  }
+}
+
+.ready-to-talk--boxes {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  @include media-med {
+    flex-direction: row;
+  }
+}
+
+.ready-to-talk--contact,
+.ready-to-talk--call-us {
+  width: 100%;
+  max-width: 284px;
+  margin-bottom: 40px;
+
+  h2 {
+    margin: 0;
+  }
+
+  padding: 20px 0;
+
+  @include media-med {
+    width: 30%;
+
+    height: 192px;
+  }
+
+  background: $paleblue;
+
+  border-radius: 23px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.16);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.consultation-button {
+  width: 214px;
+  height: 50px;
+  border-radius: 120px;
+  background-color: #00e0e1;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+// Principles Banner --- Principles Banner --- Principles Banner --- 
+// Principles Banner --- Principles Banner --- Principles Banner --- 
+// Principles Banner --- Principles Banner --- Principles Banner --- 
+
+.banner-principles {
+  background-image: linear-gradient(to bottom, #01a1b9, #007287);
+  padding: 40px 0;
+  @include media-lrg {
+    padding: 120px 0;
+  }
+  position: relative;
+}
+
+.banner-principles--image-wrapper {
+  position: relative;
+}
+
+.banner-principles--image {
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 260px;
+  display: none;
+  @include media-lrg {
+    display: block;
+  }
+}
+
+.banner-principles--content {
+  h2 {
+    margin: 0 0 30px 0;
+    text-align: center;
+    color: white;
+  }
+}
+
+.banner-principles--buttons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 650px;
+  margin: 0 auto;
+
+  @include media-lrg {
+    max-width: 900px;
+  }
+}
+.banner-principles--button {
+  width: 90px;
+  @include media-sml {
+    margin-top: 40px;
+    width: 140px;
+  }
+
+  @include media-lrg {
+    width: 185px;
+  }
+}
